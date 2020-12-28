@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jamie Walton</title>
+    <link>/</link>
+    <description>Recent content on Jamie Walton</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Dec 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Papers</title>
+      <link>/publication/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talks</title>
+      <link>/talk/</link>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/notes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/notes/</guid>
+      <description>&lt;h1 id=&#34;notes&#34;&gt;Notes&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;../maths_notes/AT.pdf&#34;&gt;Algebraic topology notes&lt;/a&gt; for masters level course taught at Durham University, Michaelmas term of 2017&amp;ndash;18. They&amp;rsquo;re rather slow paced and overly wordy, so I also made a distilled version &amp;mdash; several students told me that they appreciated the extra detail though.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../maths_notes/Top_Ap_Lecture_Summary.pdf&#34;&gt;Minicourse notes&lt;/a&gt;, for three day mini-course &lt;em&gt;topological methods in aperiodicity&lt;/em&gt;, lectured in Vienna 7th&amp;ndash;9th June 2017. These were meant to supplement the lectures, so a lot of details are missing, but most of it should still make sense independently.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../maths_notes/Introduction_to_K-theory.pdf&#34;&gt;K-theory notes&lt;/a&gt;, a very brief (proofless) introduction to K-theory for C*-algebras, accompanying 1hr talk in the Glasgow Analysis Working Seminar.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;../maths_notes/Characteristic_classes.pdf&#34;&gt;Characteristic classes notes&lt;/a&gt;, an introduction to characteristic classes (mostly the Chern classes). These were reference notes for material I talked on over 2 lectures in the Glasgow Analysis Working Seminar.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/teaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/teaching/</guid>
+      <description>&lt;h1 id=&#34;next-academic-year&#34;&gt;Next academic year&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;H42PPY (Aerospace Maths 2), full year course.&lt;/li&gt;
+&lt;li&gt;HG2MMC (Advanced Mathematical Methods for Civil Engineering), Spring term.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;previous-courses-lectured&#34;&gt;Previous Courses Lectured&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;2020 (University of Glasgow)
+&lt;ul&gt;
+&lt;li&gt;Introduction to Real Analysis (2nd year course, ~350 students)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2019 (University of Glasgow)
+&lt;ul&gt;
+&lt;li&gt;Introduction to Real Analysis (2nd year course, ~350 students)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2018 (Durham University)
+&lt;ul&gt;
+&lt;li&gt;Geometric Topology (2nd year course, ~90 students)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2017 (Durham University)
+&lt;ul&gt;
+&lt;li&gt;Algebraic Topology (4th year course, ~25 students) &lt;a href=&#34;../notes&#34;&gt;notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Geometric Topology (2nd year course, ~70 students)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2016 (University of York)
+&lt;ul&gt;
+&lt;li&gt;Metric Spaces (3rd year course, ~50 students)&lt;/li&gt;
+&lt;li&gt;Lebesgue Integration (3rd year course, ~45 students)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Miscs</title>
+      <link>/misc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/misc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

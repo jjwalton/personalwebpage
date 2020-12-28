@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on Jamie Walton</title>
+    <link>/talk/</link>
+    <description>Recent content in Talks on Jamie Walton</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Aperiodic Order: The Mathematics of Systems of Approximate Symmetry</title>
+      <link>/talk/2020_cardiff/</link>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2020_cardiff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aperiodic order: C*-algebras and tiling spaces</title>
+      <link>/talk/2019_newcastle/</link>
+      <pubDate>Tue, 05 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2019_newcastle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Homotopical tools for analysing approximate symmetry</title>
+      <link>/talk/2019_standrews/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2019_standrews/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Topological invariants for aperiodic patterns</title>
+      <link>/talk/2019_warwick/</link>
+      <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2019_warwick/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Polytopal cut and project sets: complexity and repetitivity</title>
+      <link>/talk/2019_bielefeld/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2019_bielefeld/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Constructing aperiodicity</title>
+      <link>/talk/2019_vienna/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2019_vienna/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A homotopical approach to symmetries of aperiodic patterns</title>
+      <link>/talk/2019_marseille/</link>
+      <pubDate>Mon, 08 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2019_marseille/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the topology of rotational tiling spaces</title>
+      <link>/talk/2018_bielefeld/</link>
+      <pubDate>Sat, 08 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2018_bielefeld/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tiling spaces and tiling C*-algebras</title>
+      <link>/talk/2018_glasgow/</link>
+      <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2018_glasgow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The topology of aperiodic order</title>
+      <link>/talk/2018_glasgow_gt/</link>
+      <pubDate>Tue, 16 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2018_glasgow_gt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tools for investigating recurrence properties of polytopal cut and project schemes</title>
+      <link>/talk/2018_seoul_kias/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2018_seoul_kias/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linear repetitivity for polytopal cut and project sets</title>
+      <link>/talk/2018_seoul_coex/</link>
+      <pubDate>Fri, 05 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2018_seoul_coex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resurrecting the space group of an aperiodic pattern</title>
+      <link>/talk/2018_edinburgh/</link>
+      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2018_edinburgh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Moduli spaces of patterns and their cohomology</title>
+      <link>/talk/2017_durham_gt/</link>
+      <pubDate>Mon, 02 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2017_durham_gt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Topological invariants of substitution tilings and rotations</title>
+      <link>/talk/2017_vienna/</link>
+      <pubDate>Sat, 30 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2017_vienna/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linear repetitivity of cut-and-project sets</title>
+      <link>/talk/2017_leiden/</link>
+      <pubDate>Wed, 21 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2017_leiden/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Topological methods in aperiodicity (mini-course)</title>
+      <link>/talk/2017_vienna_minicourse/</link>
+      <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2017_vienna_minicourse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aperiodic order, number theory and topology</title>
+      <link>/talk/2017_durham_pm/</link>
+      <pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2017_durham_pm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visualising and computing invariants of patterns via pattern-equivariant Poincaré duality</title>
+      <link>/talk/2017_odense/</link>
+      <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2017_odense/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hierarchical tilings and their hulls</title>
+      <link>/talk/2016_slo/</link>
+      <pubDate>Wed, 22 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2016_slo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aperiodic order and number theory</title>
+      <link>/talk/2016_york/</link>
+      <pubDate>Fri, 20 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2016_york/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pattern equivariant cohomology (Arbeitsgemeinschaft)</title>
+      <link>/talk/2015_oberwolfach/</link>
+      <pubDate>Mon, 05 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2015_oberwolfach/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Patch frequencies for cut-and-project sets</title>
+      <link>/talk/2015_galway/</link>
+      <pubDate>Wed, 24 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2015_galway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Frequency spectrums of cut-and-project sets</title>
+      <link>/talk/2015_sanant/</link>
+      <pubDate>Tue, 13 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2015_sanant/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A spectral sequence for the cohomology of rotational tiling spaces</title>
+      <link>/talk/2015_leicester/</link>
+      <pubDate>Tue, 06 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2015_leicester/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Patch frequencies for cut-and-project sets &amp; Diophantine approximation</title>
+      <link>/talk/2014_leicester/</link>
+      <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2014_leicester/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Poincaré duality for pattern-equivariant (co)homology</title>
+      <link>/talk/2014_ou/</link>
+      <pubDate>Wed, 26 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2014_ou/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Topological Invariants of Tiling Spaces</title>
+      <link>/talk/2013_sheffield/</link>
+      <pubDate>Mon, 16 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/2013_sheffield/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

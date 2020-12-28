@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1 on Jamie Walton</title>
+    <link>/publication_types/1/</link>
+    <description>Recent content in 1 on Jamie Walton</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cut and project sets with polytopal window I: Complexity</title>
+      <link>/publication/2020kw_a/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2020kw_a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A characterization of linearly repetitive cut and project sets</title>
+      <link>/publication/2018hkw_a/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2018hkw_a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Perfectly ordered quasicrystals and the Littlewood conjecture</title>
+      <link>/publication/2018hkw_b/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2018hkw_b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics of patterns in typical cut and project sets</title>
+      <link>/publication/2018hjkw/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2018hjkw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pattern-equivariant homology</title>
+      <link>/publication/2017wal_a/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017wal_a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cohomology of rotational tiling spaces</title>
+      <link>/publication/2017wal_b/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017wal_b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gaps problems and frequencies of patches in cut and project sets</title>
+      <link>/publication/2016hksw/</link>
+      <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2016hksw/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

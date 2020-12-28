@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Antoine Julien on Jamie Walton</title>
+    <link>/authors/antoine-julien/</link>
+    <description>Recent content in Antoine Julien on Jamie Walton</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/authors/antoine-julien/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deviations of ergodic averages for linearly repetitive cut and project sets</title>
+      <link>/publication/2019hjkw/</link>
+      <pubDate>Thu, 29 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2019hjkw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistics of patterns in typical cut and project sets</title>
+      <link>/publication/2018hjkw/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2018hjkw/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Miscs on Jamie Walton</title>
+    <link>/misc/</link>
+    <description>Recent content in Miscs on Jamie Walton</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    
+	    <atom:link href="/misc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/misc/latex_tips/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/misc/latex_tips/</guid>
+      <description>&lt;h1 id=&#34;latex-tips&#34;&gt;LaTeX Tips&lt;/h1&gt;
+&lt;p&gt;I am no accomplished LaTeX guru: anything more complicated than writing basic equations sends me to a search engine &amp;mdash; inevitably then a nice Stack Exchange answer &amp;mdash; rather than trying to remember what I did last time. However there are some tips I wish I&amp;rsquo;d known about, or just implemented earlier: see in particular some simple (yet I reckon rarely used) organisational tips to &lt;a href=&#34;#course-material-maintenance&#34;&gt;make course material easily updatable between years&lt;/a&gt;. I&amp;rsquo;ve also added some personal preferences that I think make LaTeX code a little easier to digest.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#syntax-imposters&#34;&gt;Syntax imposters&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#characters-are-cheap&#34;&gt;Characters are cheap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#macros&#34;&gt;Macros&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#folder-structure&#34;&gt;Folder structure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#course-material-maintenance&#34;&gt;Course material maintenance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#simple-beamer-slides&#34;&gt;Simple Beamer slides&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;syntax-imposters&#34;&gt;Syntax imposters&lt;/h2&gt;
+&lt;p&gt;Some tex code produces the symbols you want when there&amp;rsquo;s a preferred variant (which may produce subtle differences). As a result, I bet that in some cases below the suggestion may be the &amp;ldquo;approved&amp;rdquo; option without being the most commonly used!&lt;/p&gt;
+&lt;p&gt;The below produce marginal differences in spacing:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\colon&lt;/code&gt; instead of &lt;code&gt;:&lt;/code&gt;  e.g., &lt;code&gt;$f \colon X \to Y$&lt;/code&gt; gives: $f \colon X \to Y$.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\mid&lt;/code&gt; instead of &lt;code&gt;|&lt;/code&gt; in set comprehension e.g., &lt;code&gt;$\{2x+3 \mid x&amp;lt;2\}$&lt;/code&gt; gives $ \{2x+3 \mid x&amp;lt;2\} $. That looks a lot better than $ \{2x+3 | x&amp;lt;2\} $, doesn&amp;rsquo;t it? And no one wants to be artificially adding white space everywhere by writing something like &lt;code&gt;\{2x+3 \ | \ x&amp;lt;2\}&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Using apostrophes or quotation marks as single and double quotations only gives closing ones, so it looks totally wrong: &lt;code&gt;&#39;apostrophes&#39;&lt;/code&gt; gives $\text{&#39;}\text{apostrophes}\text{&#39;}$ and &lt;code&gt;&amp;quot;quotations&amp;quot;&lt;/code&gt; gives $\text{&amp;quot;}\text{quotations}\text{&amp;quot;}$. You can fix this by replacing an opening apostrophy with a backtick &lt;code&gt;`&lt;/code&gt; (probably to the left of the 1 key on your keyboard), and an opening double quotation mark can be replaced with two backticks &lt;code&gt;``&lt;/code&gt;, later followed by a closing pair of apostrophes &lt;code&gt;&#39;&#39;&lt;/code&gt;. There are also packages like &lt;code&gt;csquotes&lt;/code&gt; which can adjust this for you whilst still using usual quotation marks in your editor.&lt;/li&gt;
+&lt;li&gt;Some standard mathematical functions can be put into equations using a preceding backslash &lt;code&gt;/&lt;/code&gt;. Writing &lt;code&gt;cos(x)&lt;/code&gt; incorrectly italicises to $cos(x)$, whereas &lt;code&gt;\cos(x)&lt;/code&gt; gives the better $\cos(x)$. The same goes for the other trig functions and their hyperbolic versions. Other useful ones include &lt;code&gt;\ln&lt;/code&gt;, &lt;code&gt;\log&lt;/code&gt;, &lt;code&gt;\det&lt;/code&gt;, &lt;code&gt;\gcd&lt;/code&gt;, &lt;code&gt;\inf&lt;/code&gt;, &lt;code&gt;\sup&lt;/code&gt;, &lt;code&gt;\lim&lt;/code&gt;, &lt;code&gt;\hom&lt;/code&gt;, &lt;code&gt;\ker&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\coloneqq&lt;/code&gt; instead of &lt;code&gt;:=&lt;/code&gt; when defining an object, e.g., &lt;code&gt;\mathbb{T} \coloneqq \mathbb{R} / \mathbb{Z}&lt;/code&gt;. This needs a package, such as &lt;code&gt;mathtools&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On the topic of spacing, a space following a &lt;code&gt;.&lt;/code&gt; is interpretted as the end of a sentence. We should let the compiler know if that&amp;rsquo;s not the case, because the spacing is different, such as when we have a mid-sentence abbreviation like &amp;ldquo;Dr.&amp;rdquo; or &amp;ldquo;e.g.&amp;rdquo; (although some might say that an &amp;ldquo;e.g. &amp;quot; should always be an &amp;ldquo;e.g., &amp;quot; anyway, in which case the spacing issue won&amp;rsquo;t occur):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use a trailing backslash &lt;code&gt;.\&lt;/code&gt; after a &lt;code&gt;.&lt;/code&gt; not ending a sentence. For example: &lt;code&gt;Dr.\ X&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have a &amp;ldquo;tall&amp;rdquo; equation then the standard brackets will be too short:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding an opening &lt;code&gt;\left&lt;/code&gt; and then closing &lt;code&gt;\right&lt;/code&gt; to your brackets lets them resize to what&amp;rsquo;s inside. For example, &lt;code&gt;(2x-3) \left( \frac{y^2+1}{3z^3-2} \right)&lt;/code&gt; produces $ \displaystyle (2x-3) \left( \frac{y^2+1}{3z^3-2} \right) $, which looks a lot better than $ \displaystyle (2x-3)(\frac{y^2+1}{3z^3-2}) $, just using &lt;code&gt;( ... )&lt;/code&gt;. Newer versions of TeX also have a &lt;code&gt;\middle&lt;/code&gt; which can be useful for resizing the middle pipe in set comprehension e.g., &lt;code&gt;\middle|&lt;/code&gt; (see also &lt;code&gt;\mid&lt;/code&gt; above). One can also use the &lt;code&gt;braket&lt;/code&gt; package, which allows you to write something like &lt;code&gt;\Set{ ... | ... }&lt;/code&gt;, which automatically resizes the outer braces as well as the middle pipe (it has macros for other, similar scenarios, including of course its namesake bra-ket notation).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are various kinds of dashes which should be typeset differently, the hyphen, en-dash and em-dash:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The shortest, the &lt;strong&gt;hyphen&lt;/strong&gt;, uses a single &lt;code&gt;-&lt;/code&gt;. These are used for double-barrelled names (e.g., &lt;code&gt;Swinnerton-Dyer&lt;/code&gt;) or compound words (e.g., &lt;code&gt;double-barrelled&lt;/code&gt;).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The medium &lt;strong&gt;en-dash&lt;/strong&gt; is typed &lt;code&gt;--&lt;/code&gt;. It is used for ranges in both numbers (e.g., &lt;code&gt;See pages 6--19&lt;/code&gt;) and when referring to a range of authors. For example, we would write &lt;code&gt;The Gauss--Bonnet Theorem&lt;/code&gt; or &lt;code&gt;The Birch--Swinnerton-Dyer Conjecture&lt;/code&gt;; in this case the length of dashes helpfully informs us that there are two (not one or three) mathematicians involved: Birch and Swinnerton–Dyer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Logically enough, for the longer &lt;strong&gt;em-dash&lt;/strong&gt; we adjoin yet one more hyphen: &lt;code&gt;---&lt;/code&gt;. They are those standard grammatical dashes used to break up sentences.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Writing display equations (as opposed to inline equations):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;For reasons that I never remember, it&amp;rsquo;s preferable to use &lt;code&gt;\[ ... \]&lt;/code&gt; rather than &lt;code&gt;$$ ... $$&lt;/code&gt;. Certainly with the former, for particularly long equations I find it marginally easier to scope out the start and end of the equation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;There is an analogous variant &lt;code&gt;\(...\)&lt;/code&gt; instead of &lt;code&gt;$...$&lt;/code&gt; for inline equations, although I never use it (maybe I should?).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;characters-are-cheap&#34;&gt;Characters are cheap&lt;/h2&gt;
+&lt;p&gt;For me, cramped LaTeX code is a pain to read. It doesn&amp;rsquo;t cost anything to add extra spaces or tabs, which can give the code some more room to breathe. Readability should be favoured over character count:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I mentioned the use of &lt;code&gt;\[ ... \]&lt;/code&gt; for display equations above. I personally like to put the brackets on their own lines so that the display equation has some space around it (as it will do in your compiled output):
+&lt;pre&gt;&lt;code&gt;We consider the sum
+\[
+\sum_{n=1}^k P(n+4)^\ell
+\]
+for all $\ell &amp;gt; 0$.
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;I also added unnecessary spaces in the above. Although I don&amp;rsquo;t have a fixed convention for this, I do think this can help readability. For example,
+&lt;pre&gt;&lt;code&gt;e^z=\lim_{n\to\infty}\left(1+\frac{z}{n}\right)^n
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;feels pretty cramped to me. I can read the below more quickly:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;e^z = \lim_{n \to \infty} \left( 1 + \frac{z}{n} \right)^n
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;Use whitespace when nesting commands and writing lists too. For example, adding tabs before &lt;code&gt;\item&lt;/code&gt;s can help with readability:
+&lt;pre&gt;&lt;code&gt;\begin{itemize}
+  \item Option A;
+  \item Option B;
+  \item or one of these options:
+  \begin{enumerate}
+      \item the option C(i)
+      \item the option C(ii)
+  \end{enumerate}
+\end{itemize}
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Of course, when referring to numbered theorems, sections etc., you should use labels, so that any reordering won&amp;rsquo;t mess up your references:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If labelling a theorem, definition, lemma, corollary, proposition, equation, section, figure,&amp;hellip; it&amp;rsquo;s good to have a convention of starting your label with a corresponding tag: &lt;code&gt;\label{thm: main}&lt;/code&gt;, &lt;code&gt;\label{def: fundamental group}&lt;/code&gt;, &lt;code&gt;\label{lem: reparametrising}&lt;/code&gt;, &lt;code&gt;\label{cor: A to B equivalence}&lt;/code&gt;, &lt;code&gt;\label{prop: angle formula}&lt;/code&gt;, &lt;code&gt;\label{eq: sum of powers}&lt;/code&gt;, &lt;code&gt;\label{sec: Preliminaries} &lt;/code&gt;, &lt;code&gt;\label{fig: Arnold&#39;s cat}&lt;/code&gt;,&amp;hellip; you get the picture. You can then refer back to your main theorem by writing something like &lt;code&gt;By Theorem \ref{thm: main}&lt;/code&gt;. In most cases it&amp;rsquo;ll save more time to be descriptive with the label compared to any neglible time saved by typing a few less characters. Indeed, many LaTeX editors bring up the list of labels you currently have when you start typing &lt;code&gt;\ref{...&lt;/code&gt; and it&amp;rsquo;s nice when you don&amp;rsquo;t have to scroll back to the item to double-check it&amp;rsquo;s the right one. The same goes for sensible labels for citations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;macros&#34;&gt;Macros&lt;/h2&gt;
+&lt;p&gt;I should probably use more macros. They can both improve readability and, of course, save time:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Sometimes one decides that notation should be changed. You&amp;rsquo;ll often save time by writing a &lt;code&gt;\newcommand{\name}{definition}&lt;/code&gt; from the outset, rather than committing early (one can also use &lt;code&gt;\def...&lt;/code&gt;). For example, if I wanted to denote a mathematical gadget by &lt;code&gt;\Gamma&lt;/code&gt;, then it&amp;rsquo;s a good idea to put &lt;code&gt;\newcommand{\gadget}{\Gamma}&lt;/code&gt; in the preamble, and using &lt;code&gt;\gadget&lt;/code&gt; within the body of my document instead of &lt;code&gt;\Gamma&lt;/code&gt;. If I later decided I should have called all gadgets something else, say &lt;code&gt;G&lt;/code&gt; then I just need to change the &lt;code&gt;\Gamma&lt;/code&gt; within the newcommand to &lt;code&gt;G&lt;/code&gt;, which will redenote all of my gadgets. This is easier than doing a &amp;lsquo;replace all&amp;rsquo; (which could risk changing some Gammas accidently; perhaps I used the Gamma function somewhere, forgetting that I&amp;rsquo;d been using &lt;code&gt;\Gamma&lt;/code&gt; for my gadgets). The other advantage is that &lt;code&gt;\gadget&lt;/code&gt; is self-explanatory: this is referring to a gadget, whereas &lt;code&gt;\Gamma&lt;/code&gt; is referring to a Greek letter. So there are idiomatic reasons to do this even if you fully expect to keep notation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;rsquo;s common to have the following in the preamble: &lt;code&gt;\newcommand{\R}{\mathbb{R}}&lt;/code&gt; (or &lt;code&gt;\def\R{\mathbb{R}}&lt;/code&gt;) for $ \mathbb{R} $, and similarly &lt;code&gt;\C&lt;/code&gt;, &lt;code&gt;\Z&lt;/code&gt;, &lt;code&gt;\Q&lt;/code&gt;, &lt;code&gt;\N&lt;/code&gt; for $\mathbb{C}$, $\mathbb{Z}$, $\mathbb{Q}$ and $\mathbb{N}$. This is surely a case where shorter also happens to be easier to read.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If you use a lot of vectors, bra-kets or matrices of some size, a good macro will likely be useful.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;folder-structure&#34;&gt;Folder structure&lt;/h2&gt;
+&lt;p&gt;Especially for bigger projects (see also &lt;a href=&#34;#course-material-maintenance&#34;&gt;below&lt;/a&gt; on course note recommendations), having a sensible folder/file structure can keep things more organised.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;When there are lots (or, in my opinion, even just &lt;em&gt;any&lt;/em&gt;) figures, it makes sense to keep them in a separate folder. I usually have an &lt;code&gt;images&lt;/code&gt; folder, which contains the images in pdf form, as well as an &lt;code&gt;svgs&lt;/code&gt; sub-folder which contains the editable vector images, for me typically drawn in &lt;a href=&#34;https://inkscape.org/&#34;&gt;Inkscape&lt;/a&gt;. When you include the figures into your paper (say, using &lt;code&gt;\includegraphics&lt;/code&gt; or &lt;code&gt;\import&lt;/code&gt;), you just need to point to the right file path by including the folder name, or by adding a &lt;code&gt;\graphicspath&lt;/code&gt; in your preamble.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sometimes it makes sense to have a different tex file for each section. These can then be combined with the master tex file using &lt;code&gt;\input{filename}&lt;/code&gt;, which basically copies everything from &lt;code&gt;filename.tex&lt;/code&gt; into the corresponding place in the current document. One can also use &lt;code&gt;\include{filename}&lt;/code&gt;, which clears the previous page before inclusion. One can also use &lt;code&gt;\includeonly{filename1, ... ,filenameN}&lt;/code&gt;. This can be helpful for a large project (like a thesis or book), or if on a slow computer and you only want to work on a small section at a time. The &lt;code&gt;import&lt;/code&gt; package can also be used, which can be more powerful (e.g., if you want nested importing).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can make your LaTeX folders look less cluttered by deleting the auxiliary and log files etc. This can be done automatically by the &amp;ldquo;Clean&amp;rdquo; tool of Texmaker when it&amp;rsquo;s closed (found in preferences). This doesn&amp;rsquo;t seem to work, though, if you open then tabs, and there are some arguments for not deleting these extra files anyway. Instead, you could change the output directories to keep things tidier. Or you can just not get too hung up on a few extra files being there&amp;hellip;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;course-material-maintenance&#34;&gt;Course material maintenance&lt;/h2&gt;
+&lt;p&gt;Courses can easily consist of 50 or more documents: workshop sheets, lecture notes/slides, problem sheets, their solutions, formula sheets, the booklet of course information,&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;If any contain year-specific data then this forces an unnecessary and incredibly tedious waste of time scanning for such updates at the beginning of a new term. I don&amp;rsquo;t intend to promote a &amp;ldquo;set it then forget it&amp;rdquo; approach of rarely updating course material, which we should try to improve on each iteration. But realistically, a lot of material will be re-used. Is fishing through for these simple changes each year (crossing fingers that none are missed) really the best way to motivate improvements to the material? Probably not.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m thinking of year-specific data like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;dates/times: of classes, tests, office hours; year of the course;&lt;/li&gt;
+&lt;li&gt;lecturer/course convenor details;&lt;/li&gt;
+&lt;li&gt;links/QR-codes: to live question sessions, the course&amp;rsquo;s virtual online learning environments;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wouldn&amp;rsquo;t it be great if there was a simple list of all of the data that might need to change between years, and editing this made the necessary updates to &lt;em&gt;all&lt;/em&gt; other files? It&amp;rsquo;s easy to do with LaTeX using &lt;code&gt;sty&lt;/code&gt; files:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;If upgrading an old set of materials, go through each tex file to find data which will (or merely might) need updating between iterations. If starting on a new set of notes, of course just do this from the outset: replace the year-dependent data with a descriptive command, like &lt;code&gt;\spring_exam_date&lt;/code&gt; or &lt;code&gt;\lecturer_name&lt;/code&gt;. These should then be defined in the preamble of the tex file: &lt;code&gt;\newcommand{\spring_exam_date}{30\textsuperscript{th} January 2020}&lt;/code&gt; or &lt;code&gt;\newcommand{\lecturer_name}{Prof.\ Smartypants}&lt;/code&gt;. Make sure everything still compiles.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Next, cut all of these &lt;code&gt;\newcommand&lt;/code&gt;s (from all tex files of your course) into a &lt;em&gt;single&lt;/em&gt; &lt;code&gt;sty&lt;/code&gt; file; call it &lt;code&gt;variables.sty&lt;/code&gt; or something. I tend to put this file in a subfolder &lt;code&gt;year_dependent&lt;/code&gt; from the root folder of the course.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Your tex files need to know where to look for these commands. Add &lt;code&gt;\usepackage{../../year_dependent/variables}&lt;/code&gt; to the preamble of each which needs access, where the number of &lt;code&gt;../&lt;/code&gt; is just how many folders back you need to go to the root folder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Voilà! Now at the start of the year, just update that small &lt;code&gt;sty&lt;/code&gt; file and everything will recompile to the new version. Far more painless than scouring numerous files for outdated culprits, and it even only takes marginally longer to implement the first time (and hence pays big dividends already by the second).&lt;/p&gt;
+&lt;p&gt;Some further tips on course folder structure:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Clearly it&amp;rsquo;s cleaner to separate different components into their own folders, like a folder for &amp;ldquo;Workshop sheets&amp;rdquo; (or &amp;ldquo;Problems classes&amp;rdquo;), lecture notes/slides, exam files,&amp;hellip; I&amp;rsquo;d also say that a new folder for each problem sheet, within a &lt;code&gt;problem_sheets&lt;/code&gt; folder, is also easier to navigate.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You&amp;rsquo;ll probably have a lot of duplication in preambles: your slides (if in separate chapters) will have the same preambles, your problem sheets will have the same preambles, and so on. So why not reduce redundancy and have just one &lt;code&gt;sty&lt;/code&gt; file for each? Put an &lt;code&gt;sty_static&lt;/code&gt; folder in the root, and in there put a &lt;code&gt;type.sty&lt;/code&gt; file for each type of resource. Then each problem sheet can start with &lt;code&gt;\usepackage{../../sty_static/problem_sheet}&lt;/code&gt;, rather than multiple lines of the same copied preamble each time. This has two additional advantages: firstly, if for whatever reason one problem sheet has a unique property necessitating a change in the preamble, then this will be instantly apparent in its tex file (whose preamble will now only be a few lines). Secondly, if you decide you want to change the appearance of your problem sheets, you can do them all together by editing just one style file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Similarly, you&amp;rsquo;ll surely be using the same macros for maths symbols (like using &lt;code&gt;\newcommand{\R}{\mathbb{R}}&lt;/code&gt;, as mentioned above). Instead of copying these into &lt;em&gt;every&lt;/em&gt; tex file, why not just collect them in a single &lt;code&gt;sty&lt;/code&gt; file? You can call it &lt;code&gt;commands.sty&lt;/code&gt;, or something similar, put it into the &lt;code&gt;sty_static&lt;/code&gt; folder mentioned above, and then just put &lt;code&gt;\usepackage{../../sty_static/commands}&lt;/code&gt; into each preamble rather than the full list of maths commands. Much neater.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Putting all of the above together, our course will have something like the following folder structure:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;course
+├──booklet
+├──lecture_slides
+│   │   └──images
+│   │       └──svgs 
+│   ├──1
+│   ├──2
+│   └──...
+├──problem_sheets
+│   ├──questions
+│   │  ├──1
+│   │  ├──2
+│   │  └──...
+│   └──solutions
+│      ├──1
+│      ├──2
+│      └──...
+├──sty_static
+└──year_dependent
+├──workshops
+│   ├──sheets
+│   │  ├──1
+│   │  ├──2
+│   │  └──...
+│   └──solutions
+│      ├──1
+│      ├──2
+│      └──...
+├──...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In the above, &lt;code&gt;sty_static&lt;/code&gt; holds the &lt;code&gt;sty&lt;/code&gt; files for preambles and macros (such as for maths notation). The folder &lt;code&gt;year_dependent&lt;/code&gt; contains everything we need to edit for a new year: the &lt;code&gt;variables.sty&lt;/code&gt; file and maybe some individual files that might need updating (like images files for QR codes to student participation activities).&lt;/p&gt;
+&lt;p&gt;In case it helps a single soul, I&amp;rsquo;ve started a very basic &lt;a href=&#34;/templates/2020_course.zip&#34;&gt;template&lt;/a&gt; implementing the above.&lt;/p&gt;
+&lt;h2 id=&#34;simple-beamer-slides&#34;&gt;Simple Beamer slides&lt;/h2&gt;
+&lt;p&gt;Maths talk/lecture slides are often made on Beamer. I regularly see the bottom navigation symbols displayed but have &lt;em&gt;never&lt;/em&gt; seen them used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The (in my opinion, redundant) slide navigation symbols can be disabled with &lt;code&gt;\setbeamertemplate{navigation symbols}{}&lt;/code&gt; in the preamble.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Purely personal preference: I prefer slides to be clean and minimal. I&amp;rsquo;d rather the important content be drawing the attention than a busy frame. Here&amp;rsquo;s a &lt;a href=&#34;/templates/simple_slides.tex&#34;&gt;template&lt;/a&gt; for some simple, adaptable slides.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/misc/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/misc/links/</guid>
+      <description>&lt;h1 id=&#34;links&#34;&gt;Links&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Nottingham&amp;rsquo;s &lt;a href=&#34;https://www.nottingham.ac.uk/mathematics/&#34;&gt;School of Mathematical Sciences&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Bielefeld&amp;rsquo;s wonderful &lt;a href=&#34;https://tilings.math.uni-bielefeld.de/&#34;&gt;Tiling Encyclopedia&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://www.lms.ac.uk/&#34;&gt;London Mathematical Society&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;http://sarah-whitehouse.staff.shef.ac.uk/ttt/TTTonWWW.htm&#34;&gt;Transpennine Topology Triangle&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://apod.nasa.gov/apod/&#34;&gt;Astronomy picture of the day&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.haskell.org/&#34;&gt;Haskell&lt;/a&gt; is an interesting purely functional programming language, with design informed by category theory: it has &lt;a href=&#34;https://wiki.haskell.org/Functor&#34;&gt;functors&lt;/a&gt;, &lt;a href=&#34;https://people.mpi-sws.org/~dreyer/tor/papers/wadler.pdf&#34;&gt;theorems for free&lt;/a&gt; and &lt;a href=&#34;https://bartoszmilewski.com/2016/11/21/monads-programmers-definition/&#34;&gt;monads&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; was used to build this page, using the &lt;a href=&#34;https://sourcethemes.com/academic/&#34;&gt;Academic theme&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://detexify.kirelabs.org/classify.html&#34;&gt;Detexify&lt;/a&gt; &amp;mdash; scribble a symbol to get LaTeX code for it (or, quite often, discover that your desired symbol probably doesn&amp;rsquo;t exist).&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/misc/photos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/misc/photos/</guid>
+      <description>&lt;h1 id=&#34;some-photos&#34;&gt;Some Photos&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;../../photos/out_of_signal.jpg&#34;&gt;&lt;img src=&#34;../../photos/s_out_of_signal.jpg&#34; alt=&#34;Out of signal&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Out of signal&lt;/strong&gt;&lt;/em&gt; &amp;mdash; (Near Ardtoe; Nikon D3500, kit lens: AP&amp;ndash;P Nikkor, 18&amp;ndash;55mm F3.5&amp;ndash;5.6)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../photos/gleann_dubh_linghe.jpg&#34;&gt;&lt;img src=&#34;../../photos/s_gleann_dubh_linghe.jpg&#34; alt=&#34;Gleann Dubh Valley&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Gleann Dubh Linghe Valley&lt;/strong&gt;&lt;/em&gt; &amp;mdash; (Gleann Dubh Linghe, near Glenfinnan; Nikon D3500, kit lens)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../photos/heavy_traffic.jpg&#34;&gt;&lt;img src=&#34;../../photos/s_heavy_traffic.jpg&#34; alt=&#34;Heavy traffic&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Heavy Traffic&lt;/strong&gt;&lt;/em&gt; &amp;mdash; (Near Fort William; Nikon D3500, kit lens)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../photos/sandy_cat.jpg&#34;&gt;&lt;img src=&#34;../../photos/s_sandy_cat.jpg&#34; alt=&#34;Sandy cat&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Sandy cat&lt;/strong&gt;&lt;/em&gt; &amp;mdash; (Phi Phi Islands, Thailand; Nikon D3500, kit lens, picture taken by Kristina)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../photos/bird_wire.jpg&#34;&gt;&lt;img src=&#34;../../photos/s_bird_wire.jpg&#34; alt=&#34;Birds and wires&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Bird and wires&lt;/strong&gt;&lt;/em&gt; &amp;mdash; (Phuket Town, Thailand; Nikon D3500, kit lens)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../photos/tiny_ship.jpg&#34;&gt;&lt;img src=&#34;../../photos/s_tiny_ship.jpg&#34; alt=&#34;Miniature ship&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Minature ship&lt;/strong&gt;&lt;/em&gt; &amp;mdash; (Maritime Museum, Stockholm; Nikon D3500, AF&amp;ndash;S Nikkor 35mm F1.8)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../photos/aonach_eagach.jpg&#34;&gt;&lt;img src=&#34;../../photos/s_aonach_eagach.jpg&#34; alt=&#34;Aonach Eagach ascent&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Aonach Eagach Ascent&lt;/strong&gt;&lt;/em&gt; &amp;mdash; (Glencoe area; Moto G3 phone camera)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../photos/ben_nevis_descent.jpg&#34;&gt;&lt;img src=&#34;../../photos/s_ben_nevis_descent.jpg&#34; alt=&#34;Descending of Ben Nevis&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Descending Ben Nevis&lt;/strong&gt;&lt;/em&gt; &amp;mdash; (Ben Nevis; Moto G3 phone camera)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../../photos/buttermere.jpg&#34;&gt;&lt;img src=&#34;../../photos/s_buttermere.jpg&#34; alt=&#34;Buttermere Lake&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Buttermere&lt;/strong&gt;&lt;/em&gt; &amp;mdash; (Buttermere Lake; Moto G3 phone camera)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
