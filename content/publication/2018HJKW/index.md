@@ -11,7 +11,7 @@ publication: "*Ergodic Theory and Dynamical Systems*"
 links:
 -  name: arXiv
    url: https://arxiv.org/abs/1702.04041
-url_pdf: "https://www.cambridge.org/core/journals/ergodic-theory-and-dynamical-systems/article/statistics-of-patterns-in-typical-cut-and-project-sets/806F05AF44F7599F8E32D98EBC7CE68B"
+# url_pdf: "https://www.cambridge.org/core/journals/ergodic-theory-and-dynamical-systems/article/statistics-of-patterns-in-typical-cut-and-project-sets/806F05AF44F7599F8E32D98EBC7CE68B"
 doi: "10.1017/etds.2018.15"
 ---
 

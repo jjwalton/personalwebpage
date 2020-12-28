@@ -12,7 +12,7 @@ tags: ["52C20", "52C23", "55N05 (secondary)", "55N99 (primary)"]
 links:
 - name: arXiv
   url: https://arxiv.org/abs/1609.06606
-url_pdf: "https://londmathsoc.onlinelibrary.wiley.com/doi/abs/10.1112/blms.12098"
+# this is a comment, can add this too for pdf link, but for some reason it pre-appends my homepage to the url. url_pdf: "https://londmathsoc.onlinelibrary.wiley.com/doi/abs/10.1112/blms.12098"
 doi: "10.1112/blms.12098"
 ---
 

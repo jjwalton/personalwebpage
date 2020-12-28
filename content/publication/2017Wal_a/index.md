@@ -11,7 +11,6 @@ publication: "*Algebraic & Geometric Topology*"
 links:
 - name: arXiv
   url: https://arxiv.org/abs/1401.8153
-url_pdf: "https://msp.org/agt/2017/17-3/agt-v17-n3-p02-s.pdf"
 doi: "10.2140/agt.2017.17.1323"
 ---
 

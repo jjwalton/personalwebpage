@@ -13,7 +13,7 @@ links:
 - name: arXiv
   url: https://arxiv.org/abs/1503.04091
 doi: 10.1088/1361-6544/aa9528
-url_pdf: https://doi.org/10.1088%2F1361-6544%2Faa9528
+# url_pdf: https://doi.org/10.1088%2F1361-6544%2Faa9528
 
 ---
 

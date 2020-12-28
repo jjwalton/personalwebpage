@@ -11,7 +11,7 @@ publication: "*Transactions of the American Mathematical Society*"
 links:
 - name: arXiv
   url: https://arxiv.org/abs/1506.05649
-url_pdf: "https://www.ams.org/tran/2018-370-07/S0002-9947-2018-07136-7/"
+# url_pdf: "https://www.ams.org/tran/2018-370-07/S0002-9947-2018-07136-7/"
 doi: "10.1090/tran/7136"
 ---
 

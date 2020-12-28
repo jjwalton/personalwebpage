@@ -11,7 +11,6 @@ publication: "*Mathematical Proceedings of the Cambridge Philosophical Society*"
 links:
 - name: arXiv
   url: https://arxiv.org/abs/1411.0578
-url_pdf: "https://www.cambridge.org/core/journals/mathematical-proceedings-of-the-cambridge-philosophical-society/article/gaps-problems-and-frequencies-of-patches-in-cut-and-project-sets/1A47C2BE5E660C5C0A0AC4A828F3B6E7"
 doi: "10.1017/S0305004116000128"
 ---
 

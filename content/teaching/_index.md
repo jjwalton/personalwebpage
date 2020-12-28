@@ -1,7 +1,7 @@
 # Next academic year
 
-* H42PPY (Aerospace Maths 2)
-* HG2MMC (Advanced Mathematical Methods for Civil Engineering)
+* H42PPY (Aerospace Maths 2), year-long module.
+* HG2MMC (Advanced Mathematical Methods for Civil Engineering), one term module.
 
 # Previous Courses Lectured
 

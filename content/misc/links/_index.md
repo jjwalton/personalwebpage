@@ -8,5 +8,3 @@
 * [Haskell](https://www.haskell.org/) is an interesting purely functional programming language, with design informed by category theory: it has [functors](https://wiki.haskell.org/Functor), [theorems for free](https://people.mpi-sws.org/~dreyer/tor/papers/wadler.pdf) and [monads](https://bartoszmilewski.com/2016/11/21/monads-programmers-definition/).
 * [Hugo](https://gohugo.io/) was used to build this page, using the [Academic theme](https://sourcethemes.com/academic/).
 * [Detexify](http://detexify.kirelabs.org/classify.html) --- scribble a symbol to get LaTeX code for it (or, quite often, discover that your desired symbol probably doesn't exist).
-* [Ubuntu](https://ubuntu.com/), newcomer-friendly distribution of the Linux operating system.
-* [Darktable](https://www.darktable.org/) is a free photograph editing program.
